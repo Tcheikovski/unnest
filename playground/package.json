@@ -1,0 +1,13 @@
+{
+  "name": "unest-playground",
+  "private": true,
+  "scripts": {
+    "start": "listhen ./src/app.ts",
+    "dev": "listhen -w ./src/app.ts"
+  },
+  "dependencies": {
+    "@unest/common": "workspace:*",
+    "@unest/core": "workspace:*",
+    "listhen": "^1.7.2"
+  }
+}

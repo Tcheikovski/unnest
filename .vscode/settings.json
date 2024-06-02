@@ -1,0 +1,8 @@
+{
+  "eslint.experimental.useFlatConfig": true,
+  "exportall.config.folderListener": [
+    "/packages/core/src/injection",
+    "/packages/core/src"
+  ],
+  "exportall.config.quote": "\""
+}
