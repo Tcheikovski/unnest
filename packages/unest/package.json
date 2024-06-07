@@ -1,0 +1,45 @@
+{
+  "name": "unest",
+  "version": "1.0.0",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.mts",
+      "import": "./dist/index.mjs"
+    },
+    "./schema": {
+      "types": "./schema.d.ts",
+      "import": "./schema.js"
+    },
+    "./kit": {
+      "types": "./kit.d.ts",
+      "import": "./kit.js"
+    },
+    "./app": {
+      "types": "./dist/app/index.d.ts",
+      "import": "./dist/app/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "imports": {
+    "#app": {
+      "types": "./dist/app/index.d.ts",
+      "import": "./dist/app/index.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "app.d.ts",
+    "types.d.ts",
+    "kit.*",
+    "schema.*"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@unest/kit": "workspace:*",
+    "@unest/schema": "workspace:*"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "#",
+  "properties": {
+    "rootDir": {
+      "id": "#rootDir",
+      "default": "/<rootDir>",
+      "type": "string"
+    },
+    "workspaceDir": {
+      "id": "#workspaceDir",
+      "default": "/<workspaceDir>",
+      "type": "string"
+    },
+    "srcDir": {
+      "id": "#srcDir",
+      "default": "/<srcDir>",
+      "type": "string"
+    },
+    "buildDir": {
+      "id": "#buildDir",
+      "default": "/<rootDir>/.unest",
+      "type": "string"
+    }
+  },
+  "default": {
+    "rootDir": "/<rootDir>",
+    "workspaceDir": "/<workspaceDir>",
+    "srcDir": "/<srcDir>",
+    "buildDir": "/<rootDir>/.unest"
+  },
+  "type": "object"
+}

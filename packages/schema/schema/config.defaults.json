@@ -1,0 +1,6 @@
+{
+  "srcDir": "/<srcDir>",
+  "workspaceDir": "/<workspaceDir>",
+  "rootDir": "/<rootDir>",
+  "buildDir": "/<rootDir>/.unest"
+}

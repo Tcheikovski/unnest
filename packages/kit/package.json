@@ -1,0 +1,29 @@
+{
+  "name": "@unest/kit",
+  "version": "1.0.0",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "@unest/schema": "workspace:*",
+    "defu": "^6.1.4",
+    "pathe": "^1.1.2",
+    "pkg-types": "^1.1.1",
+    "std-env": "^3.7.0",
+    "uncrypto": "^0.1.3",
+    "untyped": "^1.4.2"
+  }
+}

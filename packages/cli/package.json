@@ -1,0 +1,24 @@
+{
+  "name": "@unest/cli",
+  "version": "1.0.0",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
+  "bin": {
+    "unest": "./bin/unest.mjs"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "dependencies": {
+    "unest": "workspace:*",
+    "citty": "^0.1.6",
+    "consola": "^3.2.3"
+  }
+}

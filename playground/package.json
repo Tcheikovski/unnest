@@ -1,13 +1,30 @@
 {
-  "name": "unest-playground",
+  "name": "playground",
   "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "listhen ./src/app.ts",
-    "dev": "listhen -w ./src/app.ts"
+    "build": "unbuild",
+    "start": "node dist/index.mjs",
+    "dev": "jiti src/index.ts"
   },
   "dependencies": {
-    "@unest/common": "workspace:*",
-    "@unest/core": "workspace:*",
+    "unest": "workspace:*",
     "listhen": "^1.7.2"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0"
   }
 }

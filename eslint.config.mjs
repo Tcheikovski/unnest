@@ -10,7 +10,7 @@ export default unjs(
       "unicorn/number-literal-case": "off",
       "@typescript-eslint/no-non-null-assertion": "off",
       "unicorn/expiring-todo-comments": "off",
-      "@typescript-eslint/ban-types": ["error", { types: { Function: false } }],
+      "@typescript-eslint/ban-types": ["error", { types: { Function: false, String: false, Symbol: false } }],
     },
   },
   prettier,
